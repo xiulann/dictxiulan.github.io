@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+
+<html lang="zh-Hant-TW">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=5">
+	<title>Faketionary</title>
+	<style>
+        /* 在這裡插入您的 CSS 內容 */
+        @charset "UTF-8";
+        @font-face { font-family: "標楷體2"; src: local('標楷體'); }
+        @font-face { font-family: "標楷體2"; src: url('revised-dict.woff'), local('標楷體');
+        }
+
+        :root 
+        {
+            --colorO :#B45E13; /* 橘 */
+        }
+        body { margin:0px; }
+        phon, code { border: 0px dashed #ccc; border-radius: 0.3em; padding-top: 0.5em; 
+        font-family:'標楷體2'; white-space:nowrap; font-size:0.9em; }
+        phon>sup, code>sup { position:relative; font-size:0.7em; left:-0.6em; top:-0.6em;
+        margin-top: 0.5em; margin-right:-0.5em; display: inline-block; text-indent:0; }
+        /* view */
+
+        #view {  margin-bottom:1em; font-size:1.5em; }
+
+        #view table { width:100%; border-spacing:0 0.5em; border-collapse:separate; }
+        #view tr { margin-top:0.3em; }
+        #view th { width:6em; padding:1em; background-color:var(--colorO); color:#ffffff; vertical-align:top; white-space:nowrap; }
+        #view td { padding:1em; background-color:#ffffff; font-family:標楷體2, '標楷體', "BiauKai", "DFKai-sb", "cwTeXKai"; }
+
+        #view td ol { margin:0; }
+        #view td>div { line-height:1.5; }
+        .view mark { background:initial; color:var(--colorR); }
+        .view b { display:inline-block; margin:0.2em 0.2em 0 0; padding:0.1em; line-height: 1;
+        border-radius:0.2em; background-color:#CC0000; color:#ffffff;
+        vertical-align:middle; font-family:微軟正黑體, 正黑體; }
+
+        .copy { margin-bottom:1em; text-align:center; background:#f2f2f2; padding:1em; line-height:1; color:#000000; }
+        .copy>div { display:inline-block; }
+    </style>
+</head>
+<body>
+	<section class="fme11">
+	<article id="view" class="view">
+	<table>
+	<tbody contenteditable="True">
+		<tr>
+			<th id="words">字　　詞</th>
+			<td headers="words">
+				<span style="font-size:1.5em;" >*</span>
+			</td>
+		</tr>
+		<tr>
+			<th id="col0">注　　音</th>
+			<td headers="col0" class="ph">
+					<code>
+						*
+						<sup>
+						ˋ
+						</sup>
+					</code>
+			</td>
+			</tr>
+		<tr>
+			<th id="col4">釋　　義</th>
+			<td headers="col4">
+			<div id="order1">
+			<div class="ph">
+				<p>
+					<b>*</b>
+					<br>
+					*
+				</p>
+				<p>
+			</div>
+			<hr>
+			</td>
+		</tr>
+	</tbody>
+	</table>
+	</article>
+	</section>
+	<footer id="footer" data-height="10em">
+	<div class="copy">
+	網頁美編引用《重編國語辭典修訂本》
+		<div>中華民國教育部版權所有
+		</div>
+	</div>
+	</footer>
+	</body>
+</html>
